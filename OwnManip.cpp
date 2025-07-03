@@ -168,8 +168,8 @@ PanelOverlay::~PanelOverlay() {
 }
 
 void PanelOverlay::AddButton(float x, float y, float w, float h,
-    const std::string& cursorPath,
-    std::function<void(MouseEvent)> cb) {
+    const string& cursorPath,
+    function<void(MouseEvent)> cb) {
     if (!gOverlay) {
         static PanelOverlay overlayInstance;
         gOverlay = &overlayInstance;
